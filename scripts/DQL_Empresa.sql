@@ -20,11 +20,11 @@ SELECT DataNasci, PrimeiroNome, SegundoNome, UltimoNome
 SELECT PrimeiroNome, SegundoNome, UltimoNome, Fone, Endereco, Cidade, CEP
 	FROM Funcionarios 
 		ORDER BY PrimeiroNome, SegundoNome, UltimoNome;
--- ERROOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
 -- 6) Liste o nome completo de todos os funcionários que não tenham segundo nome
 SELECT PrimeiroNome, UltimoNome
 	FROM Funcionarios
-		WHERE SegundoNome = '';
+		WHERE SegundoNome IS NULL;
 
 -- 7) Liste os nomes dos funcionários que moram em Ituiutaba e que exerçam a função de Telefonista
 SELECT PrimeiroNome, SegundoNome, UltimoNome 
